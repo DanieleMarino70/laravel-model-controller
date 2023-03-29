@@ -14,7 +14,7 @@
     </header>
 
     <main>
-        TEST
+        @yield('content')
     </main>
 
    
