@@ -6,8 +6,8 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
-        <a class="nav-link" aria-current="page" href={{  route('home') }}>Home</a>
-        <a class="nav-link" href={{  route('movies') }}>Movies</a>
+        <a class="nav-link @if(Request::route()?->getName() == 'home') active @endif) " aria-current="page" href={{  route('home') }}>Home</a>
+        <a class="nav-link @if(Request::route()?->getName() == 'movies') active @endif) " href={{  route('movies') }}>Movies</a>
       </div>
     </div>
   </div>
